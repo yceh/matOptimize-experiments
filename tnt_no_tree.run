@@ -1,0 +1,14 @@
+macro=;
+log tnt_log;
+watch =;
+NSTATES DNA;
+mxram 4096;
+proc &%1;
+outgroup MN908947.3;
+xmult;
+reroot;
+taxname =;
+taxname ];
+hold 1;
+export =%2;
+quit;
