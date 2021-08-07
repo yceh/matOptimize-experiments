@@ -16,5 +16,5 @@ tree$tip.label<-sapply(tree$tip.label,function(x){
 	}
 });
 tree = collapse.singles(tree)
-write.table(tree$tip.label,file="samples",row.names=F,col.names=F,quote=F)
+write.table(tree$tip.label,file=args[2],row.names=F,col.names=F,quote=F)
 write.tree(tree, tree.filename)
