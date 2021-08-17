@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 set -e
+cd $(dirname $0)
+export LD_LIBRARY_PATH=../usher/build/tbb_cmake_build/tbb_cmake_build_subdir_release
 SOURCE=data/source
 TRANSPOSE_VCF_SRC=$SOURCE/transposed_renamed.pb
 SAMPLE_SRC=$SOURCE/sample_rename

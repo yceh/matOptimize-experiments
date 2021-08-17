@@ -2,6 +2,7 @@
 set -e
 TERM=linux
 cd $(dirname $0)
+export LD_LIBRARY_PATH=../usher/build/tbb_cmake_build/tbb_cmake_build_subdir_release
 shopt -s expand_aliases
 alias time="/usr/bin/time -f '\n%e Elapsed\n%Mk resident\n%U user\n%S sys'"
 VCF_PATH=$1/init.vcf.gz
@@ -23,7 +24,7 @@ mkfifo $FA2
 zcat $FA_PATH|tee $FA1 >$FA2 &
 runtnt $1/tnt_rss.nwk tnt_sect_rss.run $FA1 &> $1/tnt_rss_log &
 runtnt $1/tnt_xss.nwk tnt_sect_xss.run $FA2 &> $1/tnt_xss_log &
-{ time matOptimize -t $TREE_PATH -v $VCF_PATH -o $1/matoptimize_out.pb -n -T 40 -q 10000000 -s 0; } &> $1/matOptimize_log &
+#{ time matOptimize -t $TREE_PATH -v $VCF_PATH -o $1/matoptimize_out.pb -n -T 40 -q 10000000 -s 0 -r 20 -d 1; } &> $1/matOptimize_log &
 wait
 rm $FA1
 rm $FA2
