@@ -2,7 +2,7 @@ macro=;
 log tnt_log;
 watch =;
 NSTATES DNA;
-mxram 40960;
+mxram 51199;
 proc & %1;
 proc [ %2;
 sect=xss;

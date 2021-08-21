@@ -16,16 +16,12 @@ runtnt()
   matOptimize -t $TNTTREE -v $VCF_PATH -o /dev/null -n -r 0 
 }
 FA1=$1/fa1
-FA2=$1/fa2
 rm -f $FA1
-rm -f $FA2
 mkfifo $FA1
-mkfifo $FA2
-zcat $FA_PATH|tee $FA1 >$FA2 &
-runtnt $1/tnt_rss.nwk tnt_sect_rss.run $FA1 &> $1/tnt_rss_log &
-runtnt $1/tnt_xss.nwk tnt_sect_xss.run $FA2 &> $1/tnt_xss_log &
-#{ time matOptimize -t $TREE_PATH -v $VCF_PATH -o $1/matoptimize_out.pb -n -T 40 -q 10000000 -s 0 -r 20 -d 1; } &> $1/matOptimize_log &
+#zcat $FA_PATH|tee $FA1 >$FA2 &
+zcat $FA_PATH > $FA1 &
+runtnt $1/tnt_parallel_sect.nwk tnt_parallel_sect.run $FA1 &> $1/tnt_parallel_sect_log &
+# { time matOptimize -t $TREE_PATH -v $VCF_PATH -o $1/matoptimize_out.pb -n -T 40 -q 10000000 -s 0 -r 20 -d 1; } &> $1/matOptimize_log &
 wait
 rm $FA1
-rm $FA2
-perl log_greper.pl $1/matOptimize_log $1/tnt_rss_log $1/tnt_xss_log 
+#perl log_greper.pl $1/matOptimize_log $1/tnt_rss_log $1/tnt_xss_log 
