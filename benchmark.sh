@@ -11,7 +11,7 @@ TREE_PATH=$1/init.nwk
 runtnt()
 { 
   TNTTREE=$1
-  time tnt run $2 $3 $TREE_PATH  $TNTTREE ';' </dev/null ;
+  time tnt run $2 $3 $TREE_PATH  $TNTTREE ';' ;
   sed -i 's/ //g' $TNTTREE
   matOptimize -t $TNTTREE -v $VCF_PATH -o /dev/null -n -r 0 
 }
@@ -20,7 +20,7 @@ rm -f $FA1
 mkfifo $FA1
 #zcat $FA_PATH|tee $FA1 >$FA2 &
 zcat $FA_PATH > $FA1 &
-runtnt $1/tnt_parallel_sect.nwk tnt_parallel_sect.run $FA1 &> $1/tnt_parallel_sect_log &
+runtnt $1/tnt_parallel_sect.nwk tnt_parallel_sect.run $FA1 2>&1 | stdbuf -oL -eL tr "\r" "\n" >  $1/tnt_parallel_sect_log
 # { time matOptimize -t $TREE_PATH -v $VCF_PATH -o $1/matoptimize_out.pb -n -T 40 -q 10000000 -s 0 -r 20 -d 1; } &> $1/matOptimize_log &
 wait
 rm $FA1
