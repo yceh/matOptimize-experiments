@@ -6,6 +6,5 @@ do
 TICKER:tick_start
 `ps -C tnt -o rss h| sed 's/^/TICKER:mem:/'`
 TICKER:time:`date +%s`
-TICKER:tick_end
 END
 done

@@ -23,6 +23,7 @@ ptnt wait ['0'] ;
 ptnt get !.;
 tchoose /;
 ptnt reset;
+ptnt encode raw;
 export =%3;
 hold 1;
 set 0 time;
