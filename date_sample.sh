@@ -20,9 +20,11 @@ matUtils extract -i $TREE_PB_SRC -s $SAMPLE_TEMP -o $PRE_RENAME_TEMP &>/dev/null
 rm $SAMPLE_TEMP
 matUtils mask -i $PRE_RENAME_TEMP -r $SAMPLE_OUT -o $RENAMED_PB_OUT &>/dev/null
 rm $PRE_RENAME_TEMP
+{
 NWK_OUT=$OUTDIR/init.nwk
 matUtils extract -i $RENAMED_PB_OUT -t $NWK_OUT
-Rscript TNT_tree.R $NWK_OUT
+Rscript TNT_tree.R $NWK_OUT 
+} &
 VCF_OUT=$OUTDIR/init.vcf.gz
 FA_OUT=$OUTDIR/init.fa.gz
 transposed_vcf_to_vcf -i $TRANSPOSE_VCF_SRC -r $REF -v $VCF_OUT -s $SAMPLE_OUT &
