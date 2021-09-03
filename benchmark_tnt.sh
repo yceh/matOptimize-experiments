@@ -13,7 +13,7 @@ runtnt()
   TNTTREE=$1
   time tnt run $2 $3 $TREE_PATH  $TNTTREE $4 $5 ';' </dev/null 
   sed -i 's/ //g' $TNTTREE
-  matOptimize -t $TNTTREE -v $VCF_PATH -o /dev/null -n -r 0 
+  matOptimize -t $TNTTREE -v $VCF_PATH -o /dev/null -n -r 0 -T 20 
 }
 FA1=$1/fa1
 rm -f $FA1
