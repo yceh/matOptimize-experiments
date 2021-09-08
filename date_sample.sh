@@ -3,15 +3,16 @@ set -e
 cd $(dirname $0)
 export LD_LIBRARY_PATH=../usher/build/tbb_cmake_build/tbb_cmake_build_subdir_release
 SOURCE=data/source
-TRANSPOSE_VCF_SRC=$SOURCE/transposed_renamed.pb
+TRANSPOSE_VCF_SRC=$SOURCE/08-25-renamed.pb
 SAMPLE_SRC=$SOURCE/sample_rename
-TREE_PB_SRC=$SOURCE/public-2021-08-10.all.masked.pb.gz
+TREE_PB_SRC=$SOURCE/public-2021-08-25.all.masked.pb
 REF=../usher/test/NC_045512v2.fa
 OUTDIR=data/$1
 
 SAMPLE_OUT=$OUTDIR/samples
 mkdir -p $OUTDIR
-head -n $1 $SAMPLE_SRC > $SAMPLE_OUT
+N_SAMP=$(numfmt --from=auto $1)
+head -n $N_SAMP $SAMPLE_SRC > $SAMPLE_OUT
 SAMPLE_TEMP=$OUTDIR/sample_temp
 PRE_RENAME_TEMP=$OUTDIR/pb_temp
 RENAMED_PB_OUT=$OUTDIR/init.pb

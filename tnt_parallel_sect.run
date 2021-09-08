@@ -30,7 +30,7 @@ set 0 time;
 quote xss stage '0';
 if ( '0' < 86400 )
 if ( %5 > 2 )
-ptnt begin psect %5 myself /swap +0 /ram 512000 /dskdata =  return tree;
+ptnt begin psect %5 myself /swap 0 /ram 512000 /dskdata =  return tree;
 set 0 time;
 quote P-TBR launched '0';
 set 0 86400-time;
@@ -41,7 +41,7 @@ bb;
 end
 end
 tchoose /;
-outgroup s34s;
+outgroup s3132759s;
 hold 1;
 reroot;
 taxname =;
