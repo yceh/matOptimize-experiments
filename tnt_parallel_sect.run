@@ -4,7 +4,7 @@ macro=;
 log tnt_log;
 watch =;
 NSTATES DNA;
-mxram 512000;
+mxram 51200000;
 mxram -;
 proc & %1;
 proc [ %2;
@@ -15,7 +15,7 @@ ptnt encode raw;
 ptnt setdata;
 set 0 time;
 quote prep take '0';
-ptnt begin psect treeparts[%4 0] myself /sector *%4 0 /ram 512000 /dskdata = sect; return polytree;
+ptnt begin psect treeparts[%4 0] myself /sector *%4 0 /ram 51200000 /dskdata = sect; return polytree;
 set 0 time;
 quote jobs lauched '0';
 set 0 86400-time;
@@ -30,13 +30,16 @@ set 0 time;
 quote xss stage '0';
 if ( '0' < 86400 )
 if ( %5 > 2 )
-ptnt begin psect %5 myself /swap 0 /ram 512000 /dskdata =  return tree;
+ptnt begin psect %5 myself /swap 0 /ram 51200000 /dskdata =  return tree;
 set 0 time;
 quote P-TBR launched '0';
 set 0 86400-time;
 ptnt wait ['0'] ;
 ptnt get !.;
 else
+quote TBR launched '0';
+set 0 86400-time;
+timeout '0';
 bb;
 end
 end
