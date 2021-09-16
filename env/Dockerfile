@@ -20,6 +20,7 @@ RUN useradd -m temp
 USER temp
 RUN  echo palosgomias > /home/temp/.passwordfile.tnt
 WORKDIR /home/temp
+ARG ignore=unknown
 RUN git clone https://github.com/yceh/matOptimize-experiments.git
 WORKDIR /home/temp/matOptimize-experiments
 RUN mkdir data 
