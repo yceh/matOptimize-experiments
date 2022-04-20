@@ -1,0 +1,1485 @@
++ /usr/bin/time usher/build/matOptimize -t 100K.nwk -v 100K.vcf.gz -o 100K_out.pb -m 0.000000001 -n -T 1
+Running with 1 processes
+Summary:
+Load starting tree from 100K.nwk last modified: Tue Apr 12 04:08:53 2022
+Load sample variant from 100K.vcf.gz last modified: Tue Apr 12 04:09:04 2022
+Will output final protobuf to 100K_out.pb .
+Will not write intermediate file. WARNNING: It will not be possible to continue optimization if this program is killed in the middle.
+Will double radius after each iteration
+Run kill -s SIGUSR2 2715 to apply all the move found immediately, then output and exit.
+Using 1 threads. 
+Loading input tree
+Input tree have 117254 nodes
+Finished loading input tree, start reading VCF and assigning states 
+Assigned 193 locusAssigned 470 locusAssigned 662 locusAssigned 906 locusAssigned 1208 locusAssigned 1473 locusAssigned 1763 locusAssigned 2050 locusAssigned 2313 locusAssigned 2542 locusAssigned 2750 locusAssigned 3004 locusAssigned 3288 locusAssigned 3544 locusAssigned 3776 locusAssigned 4023 locusAssigned 4326 locusAssigned 4615 locusAssigned 4900 locusAssigned 5132 locusAssigned 5355 locusAssigned 5633 locusAssigned 5915 locusAssigned 6158 locusAssigned 6439 locusAssigned 6715 locusAssigned 6929 locusAssigned 7136 locusAssigned 7350 locusAssigned 7644 locusAssigned 7870 locusAssigned 8153 locusAssigned 8436 locusAssigned 8653 locusAssigned 8871 locusAssigned 9157 locusAssigned 9374 locusAssigned 9662 locusAssigned 9963 locusAssigned 10224 locusAssigned 10508 locusAssigned 10762 locusAssigned 10967 locusAssigned 11268 locusAssigned 11570 locusAssigned 11852 locusAssigned 12174 locusAssigned 12470 locusAssigned 12773 locusAssigned 13082 locusAssigned 13354 locusAssigned 13584 locusAssigned 13872 locusAssigned 14187 locusAssigned 14459 locusAssigned 14756 locusAssigned 15022 locusAssigned 15300 locusAssigned 15603 locusAssigned 15918 locusAssigned 16207 locusAssigned 16482 locusAssigned 16718 locusAssigned 17014 locusAssigned 17315 locusAssigned 17615 locusAssigned 17916 locusAssigned 18213 locusAssigned 18495 locusAssigned 18801 locusAssigned 19074 locusAssigned 19222 locusAssigned 19322 locusAssigned 19482 locusAssigned 19690 locusAssigned 19909 locusAssigned 20093 locusAssigned 20265 locusAssigned 20490 locusAssigned 20727 locusAssigned 21028 locusAssigned 21174 locusAssigned 21350 locusAssigned 21611 locusAssigned 21895 locusAssigned 22144 locusAssigned 22330 locusAssigned 22612 locusAssigned 22872 locusAssigned 23132 locusAssigned 23454 locusAssigned 23753 locusAssigned 24037 locusAssigned 24334 locusAssigned 24638 locusAssigned 24964 locusAssigned 25249 locusAssigned 25538 locusAssigned 25777 locusAssigned 26038 locusAssigned 26311 locusAssigned 26609 locusAssigned 26901 locusAssigned 27197 locusAssigned 27415 locusAssigned 27542 locusAssigned 27727 locusAssigned 27949 locusAssigned 28266 locusAssigned 28572 locusAssigned 28845 locusAssigned 29142 locusAssigned 29407 locusTotal mutation size 89577871 
+Finished loading from VCF and state assignment
+
+load vcf took 1.960862 minutes
+Before condensing 75295
+37 nodes cleaned
+10725 condensed nodes
+6754 nodes cleaned
+tree post processing took 0.034956 minutes
+populated ignored range
+after state reassignment:75292
+Height:21
+Start Finding nodes to move 
+find max_level
+Max level 21
+Search all nodes
+Will search 1.000000 of nodes
+Took 0.002656 s to find nodes to move
+55558 nodes to search
+start
+Total 120498,max 111 
+Updating sensitive alleles take 5 sec55558 nodes to search 
+Node size: 55558
+Will stop in 153722861 min
++++++++++Move receiver exit
+ 55558 nodes left, 555.6 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 55458 nodes left, 142.2 min left
+requesting 390 nodes from 0 after 1 seconds, got 390 nodes 
+ 55068 nodes left, 80.4 min left
+requesting 685 nodes from 0 after 6 seconds, got 685 nodes 
+ 54383 nodes left, 50.7 min left
+requesting 1073 nodes from 0 after 8 seconds, got 1073 nodes 
+ 53310 nodes left, 38.2 min left
+requesting 1394 nodes from 0 after 14 seconds, got 1394 nodes 
+ 51916 nodes left, 31.4 min left
+requesting 1652 nodes from 0 after 20 seconds, got 1652 nodes 
+ 50264 nodes left, 26.5 min left
+requesting 1899 nodes from 0 after 23 seconds, got 1899 nodes 
+ 48365 nodes left, 22.9 min left
+requesting 2116 nodes from 0 after 27 seconds, got 2116 nodes 
+ 46249 nodes left, 19.9 min left
+requesting 2327 nodes from 0 after 29 seconds, got 2327 nodes 
+ 43922 nodes left, 17.8 min left
+requesting 2471 nodes from 0 after 36 seconds, got 2471 nodes 
+ 41451 nodes left, 15.5 min left
+requesting 2673 nodes from 0 after 32 seconds, got 2673 nodes 
+ 38778 nodes left, 13.7 min left
+requesting 2839 nodes from 0 after 36 seconds, got 2839 nodes 
+ 35939 nodes left, 12.0 min left
+requesting 3003 nodes from 0 after 37 seconds, got 3003 nodes 
+ 32936 nodes left, 10.4 min left
+requesting 3153 nodes from 0 after 39 seconds, got 3153 nodes 
+ 29783 nodes left, 9.1 min left
+requesting 3288 nodes from 0 after 41 seconds, got 3288 nodes 
+ 26495 nodes left, 7.9 min left
+requesting 3361 nodes from 0 after 48 seconds, got 3361 nodes 
+ 23134 nodes left, 6.8 min left
+requesting 3405 nodes from 0 after 52 seconds, got 3405 nodes 
+ 19729 nodes left, 5.7 min left
+requesting 3442 nodes from 0 after 53 seconds, got 3442 nodes 
+ 16287 nodes left, 4.6 min left
+requesting 3528 nodes from 0 after 47 seconds, got 3528 nodes 
+ 12759 nodes left, 3.6 min left
+requesting 3574 nodes from 0 after 52 seconds, got 3574 nodes 
+ 9185 nodes left, 2.5 min left
+requesting 3628 nodes from 0 after 51 seconds, got 3628 nodes 
+ 5557 nodes left, 1.5 min left
+requesting 3653 nodes from 0 after 55 seconds, got 2779 nodes 
+ 2778 nodes left, 0.7 min left
+requesting 3750 nodes from 0 after 35 seconds, got 1390 nodes 
+ 1388 nodes left, 0.4 min left
+requesting 3813 nodes from 0 after 18 seconds, got 695 nodes 
+ 693 nodes left, 0.2 min left
+requesting 3779 nodes from 0 after 11 seconds, got 378 nodes 
+ 315 nodes left, 0.1 min left
+requesting 3968 nodes from 0 after 3 seconds, got 315 nodes 
+distributor exit
+requesting 4043 nodes from 0 after 3 seconds, got 0 nodes 
+fetcher exit
+Search took 13.171000 min 
+Start applying moves
+Applying 72 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 60707 nodes left 42996 nodes left 42302 nodes left 40474 nodes left 40380 nodes left 39966 nodes left 39829 nodes left 38430 nodes left 38379 nodes left 36520 nodes left 33237 nodes left 33169 nodes left 32380 nodes left 32329 nodes left 30973 nodes left 30909 nodes left 29521 nodes left 29487 nodes left 29303 nodes left 28502 nodes left 27712 nodes left 25873 nodes left 25834 nodes left 25795 nodes left 25757 nodes left 25727 nodes left 25689 nodes left 25646 nodes left 25610 nodes left 25581 nodes left 25479 nodes left 25437 nodes left 25407 nodes left 25377 nodes left 25338 nodes left 25320 nodes left 25293 nodes left 23966 nodes left 22174 nodes left 20371 nodes left 18512 nodes left 18490 nodes left 18458 nodes left 18444 nodes left 18418 nodes left 18395 nodes left 18329 nodes left 18301 nodes left 18279 nodes left 18246 nodes left 18223 nodes left 16928 nodes left 16908 nodes left 16772 nodes left 16758 nodes left 15468 nodes left 15389 nodes left 15206 nodes left 13433 nodes left 13416 nodes left 10388 nodes left 9110 nodes left 9096 nodes left 6073 nodes left 6064 nodes left 4794 nodes left 3519 nodes left 3516 nodes left 3512 nodes left 3509 nodes left 3506 nodes left 1760 nodes left 1758 nodes left 13 nodes left 2 nodes left 1 nodes leftRecycled 219 moves
+116 nodes cleaned
+0 nodes cleaned
+First stage 559 deferred node 
+recycled 0.003607 of conflicting moves 
+recycling moves took 22 seconds
+populated ignored range
+Defered 475 nodes
+parsimony score after optimizing: 74991,with radius 2, second from start 939 
+
+start
+Total 120128,max 111 
+Updating sensitive alleles take 5 sec475 nodes to search 
+Node size: 55669
+Will stop in 153722848 min
++++++++++Move receiver exit
+ 475 nodes left, 4.8 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 375 nodes left, 1.3 min left
+requesting 290 nodes from 0 after 2 seconds, got 188 nodes 
+ 187 nodes left, 0.4 min left
+requesting 486 nodes from 0 after 4 seconds, got 94 nodes 
+ 93 nodes left, 0.1 min left
+requesting 625 nodes from 0 after 2 seconds, got 63 nodes 
+ 30 nodes left, 0.0 min left
+requesting 751 nodes from 0 after 1 seconds, got 30 nodes 
+distributor exit
+requesting 855 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.192817 min 
+Start applying moves
+Applying 4 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 2672 nodes left 2669 nodes left 1334 nodes leftRecycled 2 moves
+4 nodes cleaned
+0 nodes cleaned
+First stage 6 deferred node 
+recycled 0.000749 of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 6 nodes
+parsimony score after optimizing: 74985,with radius 2, second from start 956 
+
+start
+Total 120121,max 111 
+Updating sensitive alleles take 5 sec6 nodes to search 
+Node size: 55670
+Will stop in 153722847 min
++++++++++Move receiver exit
+ 6 nodes left, 0.1 min left
+requesting 100 nodes from 0 after 0 seconds, got 6 nodes 
+distributor exit
+requesting 126 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.000483 min 
+Start applying moves
+Applying 0 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 0 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 0 nodes
+parsimony score after optimizing: 74985,with radius 2, second from start 962 
+
+Last round improvement 0.004077
+Start Finding nodes to move 
+find max_level
+Max level 22
+Search all nodes
+Will search 1.000000 of nodes
+Took 0.002685 s to find nodes to move
+55670 nodes to search
+start
+Total 120121,max 111 
+Updating sensitive alleles take 5 sec55670 nodes to search 
+Node size: 55670
+Will stop in 153722847 min
++++++++++Move receiver exit
+ 55670 nodes left, 556.7 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 55570 nodes left, 191.6 min left
+requesting 290 nodes from 0 after 2 seconds, got 290 nodes 
+ 55280 nodes left, 127.1 min left
+requesting 435 nodes from 0 after 9 seconds, got 435 nodes 
+ 54845 nodes left, 87.3 min left
+requesting 628 nodes from 0 after 10 seconds, got 628 nodes 
+ 54217 nodes left, 72.0 min left
+requesting 753 nodes from 0 after 19 seconds, got 753 nodes 
+ 53464 nodes left, 60.5 min left
+requesting 883 nodes from 0 after 21 seconds, got 883 nodes 
+ 52581 nodes left, 53.5 min left
+requesting 983 nodes from 0 after 27 seconds, got 983 nodes 
+ 51598 nodes left, 47.7 min left
+requesting 1081 nodes from 0 after 29 seconds, got 1081 nodes 
+ 50517 nodes left, 42.5 min left
+requesting 1189 nodes from 0 after 29 seconds, got 1189 nodes 
+ 49328 nodes left, 37.5 min left
+requesting 1316 nodes from 0 after 28 seconds, got 1316 nodes 
+ 48012 nodes left, 34.5 min left
+requesting 1392 nodes from 0 after 37 seconds, got 1392 nodes 
+ 46620 nodes left, 31.9 min left
+requesting 1461 nodes from 0 after 39 seconds, got 1461 nodes 
+ 45159 nodes left, 29.7 min left
+requesting 1523 nodes from 0 after 41 seconds, got 1523 nodes 
+ 43636 nodes left, 28.0 min left
+requesting 1561 nodes from 0 after 47 seconds, got 1561 nodes 
+ 42075 nodes left, 26.0 min left
+requesting 1617 nodes from 0 after 43 seconds, got 1617 nodes 
+ 40458 nodes left, 24.2 min left
+requesting 1670 nodes from 0 after 44 seconds, got 1670 nodes 
+ 38788 nodes left, 22.8 min left
+requesting 1699 nodes from 0 after 50 seconds, got 1699 nodes 
+ 37089 nodes left, 21.1 min left
+requesting 1755 nodes from 0 after 44 seconds, got 1755 nodes 
+ 35334 nodes left, 19.9 min left
+requesting 1778 nodes from 0 after 52 seconds, got 1778 nodes 
+ 33556 nodes left, 18.4 min left
+requesting 1822 nodes from 0 after 47 seconds, got 1822 nodes 
+ 31734 nodes left, 17.2 min left
+requesting 1846 nodes from 0 after 52 seconds, got 1846 nodes 
+ 29888 nodes left, 16.0 min left
+requesting 1870 nodes from 0 after 52 seconds, got 1870 nodes 
+ 28018 nodes left, 14.8 min left
+requesting 1898 nodes from 0 after 51 seconds, got 1898 nodes 
+ 26120 nodes left, 13.7 min left
+requesting 1904 nodes from 0 after 57 seconds, got 1904 nodes 
+ 24216 nodes left, 12.5 min left
+requesting 1942 nodes from 0 after 49 seconds, got 1942 nodes 
+ 22274 nodes left, 11.4 min left
+requesting 1952 nodes from 0 after 56 seconds, got 1952 nodes 
+ 20322 nodes left, 10.2 min left
+requesting 1986 nodes from 0 after 50 seconds, got 1986 nodes 
+ 18336 nodes left, 9.2 min left
+requesting 1985 nodes from 0 after 59 seconds, got 1985 nodes 
+ 16351 nodes left, 8.3 min left
+requesting 1978 nodes from 0 after 61 seconds, got 1978 nodes 
+ 14373 nodes left, 7.2 min left
+requesting 1995 nodes from 0 after 54 seconds, got 1995 nodes 
+ 12378 nodes left, 6.1 min left
+requesting 2013 nodes from 0 after 54 seconds, got 2013 nodes 
+ 10365 nodes left, 5.1 min left
+requesting 2023 nodes from 0 after 56 seconds, got 2023 nodes 
+ 8342 nodes left, 4.1 min left
+requesting 2029 nodes from 0 after 57 seconds, got 2029 nodes 
+ 6313 nodes left, 3.1 min left
+requesting 2032 nodes from 0 after 58 seconds, got 2032 nodes 
+ 4281 nodes left, 2.1 min left
+requesting 2022 nodes from 0 after 62 seconds, got 2022 nodes 
+ 2259 nodes left, 1.1 min left
+requesting 2040 nodes from 0 after 54 seconds, got 1130 nodes 
+ 1129 nodes left, 0.6 min left
+requesting 2047 nodes from 0 after 31 seconds, got 565 nodes 
+ 564 nodes left, 0.3 min left
+requesting 2041 nodes from 0 after 16 seconds, got 283 nodes 
+ 281 nodes left, 0.1 min left
+requesting 2049 nodes from 0 after 7 seconds, got 205 nodes 
+ 76 nodes left, 0.0 min left
+requesting 2090 nodes from 0 after 4 seconds, got 76 nodes 
+distributor exit
+requesting 2109 nodes from 0 after 1 seconds, got 0 nodes 
+fetcher exit
+Search took 26.329433 min 
+Start applying moves
+Applying 18 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 2206 nodes left 2191 nodes left 2186 nodes left 2178 nodes left 2172 nodes left 2168 nodes left 2163 nodes left 2159 nodes left 2130 nodes left 2122 nodes left 2115 nodes left 2109 nodes left 1899 nodes left 1896 nodes left 1894 nodes left 1889 nodes left 1887 nodes left 33 nodes left 14 nodes left 13 nodes left 10 nodes left 9 nodes left 7 nodes left 4 nodes left 3 nodes left 2 nodes left 1 nodes leftRecycled 47 moves
+27 nodes cleaned
+0 nodes cleaned
+First stage 78 deferred node 
+recycled 0.021306 of conflicting moves 
+recycling moves took 2 seconds
+populated ignored range
+Defered 70 nodes
+parsimony score after optimizing: 74918,with radius 4, second from start 2551 
+
+start
+Total 120063,max 108 
+Updating sensitive alleles take 5 sec70 nodes to search 
+Node size: 55690
+Will stop in 153722821 min
++++++++++Move receiver exit
+ 70 nodes left, 0.7 min left
+requesting 100 nodes from 0 after 0 seconds, got 36 nodes 
+ 34 nodes left, 0.1 min left
+requesting 306 nodes from 0 after 0 seconds, got 31 nodes 
+ 3 nodes left, 0.0 min left
+requesting 461 nodes from 0 after 0 seconds, got 3 nodes 
+distributor exit
+requesting 432 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.027550 min 
+Start applying moves
+Applying 1 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+1 nodes cleaned
+0 nodes cleaned
+First stage 1 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 1 nodes
+parsimony score after optimizing: 74917,with radius 4, second from start 2559 
+
+start
+Total 120062,max 108 
+Updating sensitive alleles take 5 sec1 nodes to search 
+Node size: 55690
+Will stop in 153722821 min
++++++++++Move receiver exit
+ 1 nodes left, 0.0 min left
+requesting 100 nodes from 0 after 0 seconds, got 1 nodes 
+distributor exit
+requesting 96 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.000650 min 
+Start applying moves
+Applying 0 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 0 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 0 nodes
+parsimony score after optimizing: 74917,with radius 4, second from start 2565 
+
+Last round improvement 0.000907
+Start Finding nodes to move 
+find max_level
+Max level 22
+Search all nodes
+Will search 1.000000 of nodes
+Took 0.002863 s to find nodes to move
+55690 nodes to search
+start
+Total 120062,max 108 
+Updating sensitive alleles take 5 sec55690 nodes to search 
+Node size: 55690
+Will stop in 153722820 min
++++++++++Move receiver exit
+ 55690 nodes left, 556.9 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 55590 nodes left, 292.6 min left
+requesting 190 nodes from 0 after 5 seconds, got 190 nodes 
+ 55400 nodes left, 202.2 min left
+requesting 274 nodes from 0 after 10 seconds, got 274 nodes 
+ 55126 nodes left, 158.0 min left
+requesting 349 nodes from 0 after 15 seconds, got 349 nodes 
+ 54777 nodes left, 129.2 min left
+requesting 424 nodes from 0 after 18 seconds, got 424 nodes 
+ 54353 nodes left, 112.5 min left
+requesting 483 nodes from 0 after 24 seconds, got 483 nodes 
+ 53870 nodes left, 98.7 min left
+requesting 546 nodes from 0 after 25 seconds, got 546 nodes 
+ 53324 nodes left, 90.4 min left
+requesting 590 nodes from 0 after 32 seconds, got 590 nodes 
+ 52734 nodes left, 82.7 min left
+requesting 638 nodes from 0 after 32 seconds, got 638 nodes 
+ 52096 nodes left, 77.5 min left
+requesting 672 nodes from 0 after 38 seconds, got 672 nodes 
+ 51424 nodes left, 72.4 min left
+requesting 710 nodes from 0 after 37 seconds, got 710 nodes 
+ 50714 nodes left, 68.3 min left
+requesting 742 nodes from 0 after 40 seconds, got 742 nodes 
+ 49972 nodes left, 64.1 min left
+requesting 779 nodes from 0 after 39 seconds, got 779 nodes 
+ 49193 nodes left, 60.2 min left
+requesting 817 nodes from 0 after 39 seconds, got 817 nodes 
+ 48376 nodes left, 57.8 min left
+requesting 837 nodes from 0 after 47 seconds, got 837 nodes 
+ 47539 nodes left, 55.3 min left
+requesting 860 nodes from 0 after 46 seconds, got 860 nodes 
+ 46679 nodes left, 53.0 min left
+requesting 881 nodes from 0 after 47 seconds, got 881 nodes 
+ 45798 nodes left, 50.6 min left
+requesting 905 nodes from 0 after 46 seconds, got 905 nodes 
+ 44893 nodes left, 48.9 min left
+requesting 918 nodes from 0 after 51 seconds, got 918 nodes 
+ 43975 nodes left, 47.2 min left
+requesting 932 nodes from 0 after 51 seconds, got 932 nodes 
+ 43043 nodes left, 45.5 min left
+requesting 946 nodes from 0 after 51 seconds, got 946 nodes 
+ 42097 nodes left, 43.9 min left
+requesting 960 nodes from 0 after 51 seconds, got 960 nodes 
+ 41137 nodes left, 42.5 min left
+requesting 968 nodes from 0 after 54 seconds, got 968 nodes 
+ 40169 nodes left, 41.2 min left
+requesting 976 nodes from 0 after 54 seconds, got 976 nodes 
+ 39193 nodes left, 40.2 min left
+requesting 975 nodes from 0 after 59 seconds, got 975 nodes 
+ 38218 nodes left, 38.8 min left
+requesting 985 nodes from 0 after 53 seconds, got 985 nodes 
+ 37233 nodes left, 37.3 min left
+requesting 998 nodes from 0 after 52 seconds, got 998 nodes 
+ 36235 nodes left, 36.3 min left
+requesting 997 nodes from 0 after 59 seconds, got 997 nodes 
+ 35238 nodes left, 35.2 min left
+requesting 1000 nodes from 0 after 57 seconds, got 1000 nodes 
+ 34238 nodes left, 34.1 min left
+requesting 1005 nodes from 0 after 56 seconds, got 1005 nodes 
+ 33233 nodes left, 33.0 min left
+requesting 1006 nodes from 0 after 58 seconds, got 1006 nodes 
+ 32227 nodes left, 32.0 min left
+requesting 1007 nodes from 0 after 58 seconds, got 1007 nodes 
+ 31220 nodes left, 31.1 min left
+requesting 1003 nodes from 0 after 61 seconds, got 1003 nodes 
+ 30217 nodes left, 30.1 min left
+requesting 1004 nodes from 0 after 58 seconds, got 1004 nodes 
+ 29213 nodes left, 28.8 min left
+requesting 1013 nodes from 0 after 54 seconds, got 1013 nodes 
+ 28200 nodes left, 27.6 min left
+requesting 1022 nodes from 0 after 54 seconds, got 1022 nodes 
+ 27178 nodes left, 26.5 min left
+requesting 1025 nodes from 0 after 57 seconds, got 1025 nodes 
+ 26153 nodes left, 25.3 min left
+requesting 1034 nodes from 0 after 54 seconds, got 1034 nodes 
+ 25119 nodes left, 24.2 min left
+requesting 1037 nodes from 0 after 57 seconds, got 1037 nodes 
+ 24082 nodes left, 23.1 min left
+requesting 1042 nodes from 0 after 56 seconds, got 1042 nodes 
+ 23040 nodes left, 22.0 min left
+requesting 1047 nodes from 0 after 56 seconds, got 1047 nodes 
+ 21993 nodes left, 20.9 min left
+requesting 1052 nodes from 0 after 56 seconds, got 1052 nodes 
+ 20941 nodes left, 19.9 min left
+requesting 1053 nodes from 0 after 58 seconds, got 1053 nodes 
+ 19888 nodes left, 18.8 min left
+requesting 1060 nodes from 0 after 55 seconds, got 1060 nodes 
+ 18828 nodes left, 17.7 min left
+requesting 1061 nodes from 0 after 58 seconds, got 1061 nodes 
+ 17767 nodes left, 16.7 min left
+requesting 1066 nodes from 0 after 56 seconds, got 1066 nodes 
+ 16701 nodes left, 15.8 min left
+requesting 1060 nodes from 0 after 62 seconds, got 1060 nodes 
+ 15641 nodes left, 14.8 min left
+requesting 1060 nodes from 0 after 59 seconds, got 1060 nodes 
+ 14581 nodes left, 13.8 min left
+requesting 1060 nodes from 0 after 59 seconds, got 1060 nodes 
+ 13521 nodes left, 12.8 min left
+requesting 1060 nodes from 0 after 59 seconds, got 1060 nodes 
+ 12461 nodes left, 11.9 min left
+requesting 1051 nodes from 0 after 64 seconds, got 1051 nodes 
+ 11410 nodes left, 10.8 min left
+requesting 1058 nodes from 0 after 55 seconds, got 1058 nodes 
+ 10352 nodes left, 9.7 min left
+requesting 1065 nodes from 0 after 55 seconds, got 1065 nodes 
+ 9287 nodes left, 8.7 min left
+requesting 1066 nodes from 0 after 58 seconds, got 1066 nodes 
+ 8221 nodes left, 7.7 min left
+requesting 1069 nodes from 0 after 57 seconds, got 1069 nodes 
+ 7152 nodes left, 6.7 min left
+requesting 1069 nodes from 0 after 59 seconds, got 1069 nodes 
+ 6083 nodes left, 5.7 min left
+requesting 1067 nodes from 0 after 60 seconds, got 1067 nodes 
+ 5016 nodes left, 4.7 min left
+requesting 1068 nodes from 0 after 58 seconds, got 1068 nodes 
+ 3948 nodes left, 3.7 min left
+requesting 1066 nodes from 0 after 60 seconds, got 1066 nodes 
+ 2882 nodes left, 2.7 min left
+requesting 1060 nodes from 0 after 62 seconds, got 1060 nodes 
+ 1822 nodes left, 1.7 min left
+requesting 1061 nodes from 0 after 58 seconds, got 912 nodes 
+ 910 nodes left, 0.9 min left
+requesting 1060 nodes from 0 after 51 seconds, got 456 nodes 
+ 454 nodes left, 0.4 min left
+requesting 1059 nodes from 0 after 25 seconds, got 228 nodes 
+ 226 nodes left, 0.2 min left
+requesting 1058 nodes from 0 after 12 seconds, got 114 nodes 
+ 112 nodes left, 0.1 min left
+requesting 1049 nodes from 0 after 6 seconds, got 105 nodes 
+ 7 nodes left, 0.0 min left
+requesting 1049 nodes from 0 after 5 seconds, got 7 nodes 
+distributor exit
+requesting 965 nodes from 0 after 1 seconds, got 0 nodes 
+fetcher exit
+Search took 51.930733 min 
+Start applying moves
+Applying 8 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 758 nodes left 388 nodes left 326 nodes left 323 nodes left 315 nodes left 312 nodes left 310 nodes left 302 nodes left 295 nodes left 293 nodes left 6 nodes left 5 nodes leftRecycled 18 moves
+11 nodes cleaned
+0 nodes cleaned
+First stage 39 deferred node 
+recycled 0.023747 of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 35 nodes
+parsimony score after optimizing: 74887,with radius 8, second from start 5687 
+
+start
+Total 119689,max 105 
+Updating sensitive alleles take 5 sec35 nodes to search 
+Node size: 55695
+Will stop in 153722768 min
++++++++++Move receiver exit
+ 35 nodes left, 0.3 min left
+requesting 100 nodes from 0 after 0 seconds, got 18 nodes 
+ 17 nodes left, 0.1 min left
+requesting 198 nodes from 0 after 0 seconds, got 17 nodes 
+distributor exit
+requesting 280 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.025717 min 
+Start applying moves
+Applying 2 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 3 nodes left 2 nodes leftRecycled 1 moves
+2 nodes cleaned
+0 nodes cleaned
+First stage 3 deferred node 
+recycled 0.333333 of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 3 nodes
+parsimony score after optimizing: 74884,with radius 8, second from start 5695 
+
+start
+Total 119684,max 105 
+Updating sensitive alleles take 5 sec3 nodes to search 
+Node size: 55695
+Will stop in 153722768 min
++++++++++Move receiver exit
+ 3 nodes left, 0.0 min left
+requesting 100 nodes from 0 after 0 seconds, got 3 nodes 
+distributor exit
+requesting 108 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.001700 min 
+Start applying moves
+Applying 0 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 0 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 0 nodes
+parsimony score after optimizing: 74884,with radius 8, second from start 5701 
+
+Last round improvement 0.000440
+Start Finding nodes to move 
+find max_level
+Max level 22
+Search all nodes
+Will search 1.000000 of nodes
+Took 0.002685 s to find nodes to move
+55695 nodes to search
+start
+Total 119684,max 105 
+Updating sensitive alleles take 5 sec55695 nodes to search 
+Node size: 55695
+Will stop in 153722768 min
++++++++++Move receiver exit
+ 55695 nodes left, 557.0 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 55595 nodes left, 317.7 min left
+requesting 175 nodes from 0 after 6 seconds, got 175 nodes 
+ 55420 nodes left, 238.9 min left
+requesting 232 nodes from 0 after 13 seconds, got 232 nodes 
+ 55188 nodes left, 195.7 min left
+requesting 282 nodes from 0 after 18 seconds, got 282 nodes 
+ 54906 nodes left, 162.4 min left
+requesting 338 nodes from 0 after 19 seconds, got 338 nodes 
+ 54568 nodes left, 140.6 min left
+requesting 388 nodes from 0 after 23 seconds, got 388 nodes 
+ 54180 nodes left, 126.3 min left
+requesting 429 nodes from 0 after 28 seconds, got 429 nodes 
+ 53751 nodes left, 115.3 min left
+requesting 466 nodes from 0 after 31 seconds, got 466 nodes 
+ 53285 nodes left, 105.7 min left
+requesting 504 nodes from 0 after 32 seconds, got 504 nodes 
+ 52781 nodes left, 97.7 min left
+requesting 540 nodes from 0 after 34 seconds, got 540 nodes 
+ 52241 nodes left, 91.8 min left
+requesting 569 nodes from 0 after 38 seconds, got 569 nodes 
+ 51672 nodes left, 86.6 min left
+requesting 597 nodes from 0 after 39 seconds, got 597 nodes 
+ 51075 nodes left, 81.2 min left
+requesting 629 nodes from 0 after 38 seconds, got 629 nodes 
+ 50446 nodes left, 77.7 min left
+requesting 649 nodes from 0 after 44 seconds, got 649 nodes 
+ 49797 nodes left, 74.8 min left
+requesting 666 nodes from 0 after 46 seconds, got 666 nodes 
+ 49131 nodes left, 71.8 min left
+requesting 684 nodes from 0 after 46 seconds, got 684 nodes 
+ 48447 nodes left, 69.3 min left
+requesting 699 nodes from 0 after 48 seconds, got 699 nodes 
+ 47748 nodes left, 67.1 min left
+requesting 712 nodes from 0 after 49 seconds, got 712 nodes 
+ 47036 nodes left, 64.5 min left
+requesting 729 nodes from 0 after 47 seconds, got 729 nodes 
+ 46307 nodes left, 62.5 min left
+requesting 741 nodes from 0 after 50 seconds, got 741 nodes 
+ 45566 nodes left, 60.4 min left
+requesting 755 nodes from 0 after 49 seconds, got 755 nodes 
+ 44811 nodes left, 59.0 min left
+requesting 760 nodes from 0 after 55 seconds, got 760 nodes 
+ 44051 nodes left, 57.4 min left
+requesting 768 nodes from 0 after 53 seconds, got 768 nodes 
+ 43283 nodes left, 55.8 min left
+requesting 776 nodes from 0 after 53 seconds, got 776 nodes 
+ 42507 nodes left, 54.4 min left
+requesting 781 nodes from 0 after 55 seconds, got 781 nodes 
+ 41726 nodes left, 53.0 min left
+requesting 788 nodes from 0 after 54 seconds, got 788 nodes 
+ 40938 nodes left, 51.6 min left
+requesting 793 nodes from 0 after 55 seconds, got 793 nodes 
+ 40145 nodes left, 50.2 min left
+requesting 800 nodes from 0 after 54 seconds, got 800 nodes 
+ 39345 nodes left, 48.9 min left
+requesting 804 nodes from 0 after 56 seconds, got 804 nodes 
+ 38541 nodes left, 47.8 min left
+requesting 806 nodes from 0 after 57 seconds, got 806 nodes 
+ 37735 nodes left, 46.7 min left
+requesting 808 nodes from 0 after 57 seconds, got 808 nodes 
+ 36927 nodes left, 45.4 min left
+requesting 813 nodes from 0 after 55 seconds, got 813 nodes 
+ 36114 nodes left, 44.2 min left
+requesting 817 nodes from 0 after 56 seconds, got 817 nodes 
+ 35297 nodes left, 43.1 min left
+requesting 819 nodes from 0 after 57 seconds, got 819 nodes 
+ 34478 nodes left, 41.9 min left
+requesting 823 nodes from 0 after 56 seconds, got 823 nodes 
+ 33655 nodes left, 40.6 min left
+requesting 828 nodes from 0 after 55 seconds, got 828 nodes 
+ 32827 nodes left, 39.6 min left
+requesting 830 nodes from 0 after 57 seconds, got 830 nodes 
+ 31997 nodes left, 38.3 min left
+requesting 835 nodes from 0 after 55 seconds, got 835 nodes 
+ 31162 nodes left, 37.3 min left
+requesting 836 nodes from 0 after 58 seconds, got 836 nodes 
+ 30326 nodes left, 36.2 min left
+requesting 837 nodes from 0 after 58 seconds, got 837 nodes 
+ 29489 nodes left, 35.1 min left
+requesting 839 nodes from 0 after 57 seconds, got 839 nodes 
+ 28650 nodes left, 34.2 min left
+requesting 837 nodes from 0 after 60 seconds, got 837 nodes 
+ 27813 nodes left, 33.1 min left
+requesting 841 nodes from 0 after 56 seconds, got 841 nodes 
+ 26972 nodes left, 32.1 min left
+requesting 839 nodes from 0 after 60 seconds, got 839 nodes 
+ 26133 nodes left, 31.3 min left
+requesting 835 nodes from 0 after 62 seconds, got 835 nodes 
+ 25298 nodes left, 30.2 min left
+requesting 837 nodes from 0 after 57 seconds, got 837 nodes 
+ 24461 nodes left, 29.3 min left
+requesting 835 nodes from 0 after 60 seconds, got 835 nodes 
+ 23626 nodes left, 28.1 min left
+requesting 842 nodes from 0 after 54 seconds, got 842 nodes 
+ 22784 nodes left, 26.9 min left
+requesting 848 nodes from 0 after 55 seconds, got 848 nodes 
+ 21936 nodes left, 25.9 min left
+requesting 846 nodes from 0 after 60 seconds, got 846 nodes 
+ 21090 nodes left, 24.9 min left
+requesting 847 nodes from 0 after 58 seconds, got 847 nodes 
+ 20243 nodes left, 23.9 min left
+requesting 848 nodes from 0 after 58 seconds, got 848 nodes 
+ 19395 nodes left, 22.9 min left
+requesting 846 nodes from 0 after 60 seconds, got 846 nodes 
+ 18549 nodes left, 22.1 min left
+requesting 841 nodes from 0 after 62 seconds, got 841 nodes 
+ 17708 nodes left, 21.0 min left
+requesting 842 nodes from 0 after 58 seconds, got 842 nodes 
+ 16866 nodes left, 20.0 min left
+requesting 843 nodes from 0 after 58 seconds, got 843 nodes 
+ 16023 nodes left, 19.1 min left
+requesting 840 nodes from 0 after 61 seconds, got 840 nodes 
+ 15183 nodes left, 18.1 min left
+requesting 841 nodes from 0 after 58 seconds, got 841 nodes 
+ 14342 nodes left, 17.1 min left
+requesting 840 nodes from 0 after 59 seconds, got 840 nodes 
+ 13502 nodes left, 16.1 min left
+requesting 837 nodes from 0 after 61 seconds, got 837 nodes 
+ 12665 nodes left, 15.1 min left
+requesting 837 nodes from 0 after 59 seconds, got 837 nodes 
+ 11828 nodes left, 14.0 min left
+requesting 842 nodes from 0 after 55 seconds, got 842 nodes 
+ 10986 nodes left, 13.0 min left
+requesting 844 nodes from 0 after 57 seconds, got 844 nodes 
+ 10142 nodes left, 12.1 min left
+requesting 841 nodes from 0 after 61 seconds, got 841 nodes 
+ 9301 nodes left, 11.1 min left
+requesting 840 nodes from 0 after 59 seconds, got 840 nodes 
+ 8461 nodes left, 10.1 min left
+requesting 838 nodes from 0 after 60 seconds, got 838 nodes 
+ 7623 nodes left, 9.1 min left
+requesting 839 nodes from 0 after 58 seconds, got 839 nodes 
+ 6784 nodes left, 8.1 min left
+requesting 841 nodes from 0 after 57 seconds, got 841 nodes 
+ 5943 nodes left, 7.0 min left
+requesting 843 nodes from 0 after 57 seconds, got 843 nodes 
+ 5100 nodes left, 6.1 min left
+requesting 842 nodes from 0 after 59 seconds, got 842 nodes 
+ 4258 nodes left, 5.0 min left
+requesting 848 nodes from 0 after 55 seconds, got 848 nodes 
+ 3410 nodes left, 4.0 min left
+requesting 846 nodes from 0 after 60 seconds, got 846 nodes 
+ 2564 nodes left, 3.0 min left
+requesting 847 nodes from 0 after 58 seconds, got 847 nodes 
+ 1717 nodes left, 2.0 min left
+requesting 847 nodes from 0 after 59 seconds, got 847 nodes 
+ 870 nodes left, 1.0 min left
+requesting 849 nodes from 0 after 57 seconds, got 436 nodes 
+ 434 nodes left, 0.5 min left
+requesting 843 nodes from 0 after 32 seconds, got 217 nodes 
+ 217 nodes left, 0.3 min left
+requesting 845 nodes from 0 after 14 seconds, got 109 nodes 
+ 108 nodes left, 0.1 min left
+requesting 833 nodes from 0 after 8 seconds, got 84 nodes 
+ 24 nodes left, 0.0 min left
+requesting 821 nodes from 0 after 6 seconds, got 24 nodes 
+distributor exit
+requesting 810 nodes from 0 after 1 seconds, got 0 nodes 
+fetcher exit
+Search took 65.062800 min 
+Start applying moves
+Applying 2 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 169 nodes left 156 nodes left 105 nodes left 88 nodes left 81 nodes left 77 nodes left 27 nodes left 26 nodes left 10 nodes left 9 nodes leftRecycled 15 moves
+10 nodes cleaned
+0 nodes cleaned
+First stage 42 deferred node 
+recycled 0.088757 of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 33 nodes
+parsimony score after optimizing: 74864,with radius 16, second from start 9611 
+
+start
+Total 120043,max 108 
+Updating sensitive alleles take 5 sec33 nodes to search 
+Node size: 55692
+Will stop in 153722703 min
++++++++++Move receiver exit
+ 33 nodes left, 0.3 min left
+requesting 100 nodes from 0 after 0 seconds, got 17 nodes 
+ 16 nodes left, 0.1 min left
+requesting 141 nodes from 0 after 1 seconds, got 15 nodes 
+ 1 nodes left, 0.0 min left
+requesting 171 nodes from 0 after 1 seconds, got 1 nodes 
+distributor exit
+requesting 159 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.047983 min 
+Start applying moves
+Applying 1 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 1 nodes leftRecycled 1 moves
+1 nodes cleaned
+0 nodes cleaned
+First stage 2 deferred node 
+recycled 1.000000 of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 2 nodes
+parsimony score after optimizing: 74862,with radius 16, second from start 9620 
+
+start
+Total 120034,max 108 
+Updating sensitive alleles take 5 sec2 nodes to search 
+Node size: 55691
+Will stop in 153722703 min
++++++++++Move receiver exit
+ 2 nodes left, 0.0 min left
+requesting 100 nodes from 0 after 0 seconds, got 2 nodes 
+distributor exit
+requesting 102 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.001867 min 
+Start applying moves
+Applying 0 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 0 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 0 nodes
+parsimony score after optimizing: 74862,with radius 16, second from start 9626 
+
+Last round improvement 0.000294
+Start Finding nodes to move 
+find max_level
+Max level 26
+Search all nodes
+Will search 1.000000 of nodes
+Took 0.002774 s to find nodes to move
+55691 nodes to search
+start
+Total 120034,max 108 
+Updating sensitive alleles take 5 sec55691 nodes to search 
+Node size: 55691
+Will stop in 153722703 min
++++++++++Move receiver exit
+ 55691 nodes left, 556.9 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 55591 nodes left, 336.9 min left
+requesting 165 nodes from 0 after 7 seconds, got 165 nodes 
+ 55426 nodes left, 247.4 min left
+requesting 224 nodes from 0 after 12 seconds, got 224 nodes 
+ 55202 nodes left, 200.0 min left
+requesting 276 nodes from 0 after 17 seconds, got 276 nodes 
+ 54926 nodes left, 165.9 min left
+requesting 331 nodes from 0 after 19 seconds, got 331 nodes 
+ 54595 nodes left, 146.0 min left
+requesting 374 nodes from 0 after 25 seconds, got 374 nodes 
+ 54221 nodes left, 130.3 min left
+requesting 416 nodes from 0 after 27 seconds, got 416 nodes 
+ 53805 nodes left, 119.0 min left
+requesting 452 nodes from 0 after 31 seconds, got 452 nodes 
+ 53353 nodes left, 110.7 min left
+requesting 482 nodes from 0 after 35 seconds, got 482 nodes 
+ 52871 nodes left, 103.5 min left
+requesting 511 nodes from 0 after 36 seconds, got 511 nodes 
+ 52360 nodes left, 97.3 min left
+requesting 538 nodes from 0 after 38 seconds, got 538 nodes 
+ 51822 nodes left, 92.4 min left
+requesting 561 nodes from 0 after 41 seconds, got 561 nodes 
+ 51261 nodes left, 88.5 min left
+requesting 579 nodes from 0 after 44 seconds, got 579 nodes 
+ 50682 nodes left, 85.5 min left
+requesting 593 nodes from 0 after 47 seconds, got 593 nodes 
+ 50089 nodes left, 82.0 min left
+requesting 611 nodes from 0 after 45 seconds, got 611 nodes 
+ 49478 nodes left, 79.0 min left
+requesting 626 nodes from 0 after 47 seconds, got 626 nodes 
+ 48852 nodes left, 76.6 min left
+requesting 638 nodes from 0 after 49 seconds, got 638 nodes 
+ 48214 nodes left, 73.9 min left
+requesting 652 nodes from 0 after 48 seconds, got 652 nodes 
+ 47562 nodes left, 71.5 min left
+requesting 665 nodes from 0 after 49 seconds, got 665 nodes 
+ 46897 nodes left, 69.7 min left
+requesting 673 nodes from 0 after 52 seconds, got 673 nodes 
+ 46224 nodes left, 67.7 min left
+requesting 683 nodes from 0 after 51 seconds, got 683 nodes 
+ 45541 nodes left, 65.7 min left
+requesting 693 nodes from 0 after 51 seconds, got 693 nodes 
+ 44848 nodes left, 64.1 min left
+requesting 700 nodes from 0 after 53 seconds, got 700 nodes 
+ 44148 nodes left, 62.3 min left
+requesting 709 nodes from 0 after 52 seconds, got 709 nodes 
+ 43439 nodes left, 60.8 min left
+requesting 715 nodes from 0 after 54 seconds, got 715 nodes 
+ 42724 nodes left, 59.3 min left
+requesting 720 nodes from 0 after 55 seconds, got 720 nodes 
+ 42004 nodes left, 57.7 min left
+requesting 728 nodes from 0 after 53 seconds, got 728 nodes 
+ 41276 nodes left, 56.2 min left
+requesting 734 nodes from 0 after 54 seconds, got 734 nodes 
+ 40542 nodes left, 55.0 min left
+requesting 737 nodes from 0 after 56 seconds, got 737 nodes 
+ 39805 nodes left, 53.6 min left
+requesting 742 nodes from 0 after 55 seconds, got 742 nodes 
+ 39063 nodes left, 52.6 min left
+requesting 743 nodes from 0 after 58 seconds, got 743 nodes 
+ 38320 nodes left, 51.2 min left
+requesting 748 nodes from 0 after 55 seconds, got 748 nodes 
+ 37572 nodes left, 50.2 min left
+requesting 748 nodes from 0 after 59 seconds, got 748 nodes 
+ 36824 nodes left, 49.1 min left
+requesting 750 nodes from 0 after 57 seconds, got 750 nodes 
+ 36074 nodes left, 48.0 min left
+requesting 751 nodes from 0 after 58 seconds, got 751 nodes 
+ 35323 nodes left, 46.8 min left
+requesting 754 nodes from 0 after 56 seconds, got 754 nodes 
+ 34569 nodes left, 45.7 min left
+requesting 757 nodes from 0 after 56 seconds, got 757 nodes 
+ 33812 nodes left, 44.5 min left
+requesting 760 nodes from 0 after 56 seconds, got 760 nodes 
+ 33052 nodes left, 43.4 min left
+requesting 762 nodes from 0 after 57 seconds, got 762 nodes 
+ 32290 nodes left, 42.4 min left
+requesting 762 nodes from 0 after 59 seconds, got 762 nodes 
+ 31528 nodes left, 41.3 min left
+requesting 763 nodes from 0 after 58 seconds, got 763 nodes 
+ 30765 nodes left, 40.3 min left
+requesting 763 nodes from 0 after 59 seconds, got 763 nodes 
+ 30002 nodes left, 39.3 min left
+requesting 764 nodes from 0 after 58 seconds, got 764 nodes 
+ 29238 nodes left, 38.4 min left
+requesting 762 nodes from 0 after 60 seconds, got 762 nodes 
+ 28476 nodes left, 37.4 min left
+requesting 762 nodes from 0 after 59 seconds, got 762 nodes 
+ 27714 nodes left, 36.4 min left
+requesting 762 nodes from 0 after 59 seconds, got 762 nodes 
+ 26952 nodes left, 35.3 min left
+requesting 763 nodes from 0 after 58 seconds, got 763 nodes 
+ 26189 nodes left, 34.3 min left
+requesting 763 nodes from 0 after 59 seconds, got 763 nodes 
+ 25426 nodes left, 33.3 min left
+requesting 764 nodes from 0 after 58 seconds, got 764 nodes 
+ 24662 nodes left, 32.2 min left
+requesting 765 nodes from 0 after 58 seconds, got 765 nodes 
+ 23897 nodes left, 31.2 min left
+requesting 766 nodes from 0 after 58 seconds, got 766 nodes 
+ 23131 nodes left, 30.1 min left
+requesting 768 nodes from 0 after 57 seconds, got 768 nodes 
+ 22363 nodes left, 29.1 min left
+requesting 769 nodes from 0 after 58 seconds, got 769 nodes 
+ 21594 nodes left, 28.1 min left
+requesting 769 nodes from 0 after 59 seconds, got 769 nodes 
+ 20825 nodes left, 27.0 min left
+requesting 771 nodes from 0 after 57 seconds, got 771 nodes 
+ 20054 nodes left, 26.0 min left
+requesting 770 nodes from 0 after 59 seconds, got 770 nodes 
+ 19284 nodes left, 25.0 min left
+requesting 770 nodes from 0 after 59 seconds, got 770 nodes 
+ 18514 nodes left, 24.0 min left
+requesting 771 nodes from 0 after 58 seconds, got 771 nodes 
+ 17743 nodes left, 23.0 min left
+requesting 772 nodes from 0 after 58 seconds, got 772 nodes 
+ 16971 nodes left, 22.0 min left
+requesting 773 nodes from 0 after 58 seconds, got 773 nodes 
+ 16198 nodes left, 21.0 min left
+requesting 772 nodes from 0 after 59 seconds, got 772 nodes 
+ 15426 nodes left, 20.0 min left
+requesting 773 nodes from 0 after 58 seconds, got 773 nodes 
+ 14653 nodes left, 19.0 min left
+requesting 771 nodes from 0 after 60 seconds, got 771 nodes 
+ 13882 nodes left, 18.0 min left
+requesting 770 nodes from 0 after 59 seconds, got 770 nodes 
+ 13112 nodes left, 17.0 min left
+requesting 770 nodes from 0 after 59 seconds, got 770 nodes 
+ 12342 nodes left, 16.0 min left
+requesting 771 nodes from 0 after 58 seconds, got 771 nodes 
+ 11571 nodes left, 15.0 min left
+requesting 772 nodes from 0 after 58 seconds, got 772 nodes 
+ 10799 nodes left, 14.0 min left
+requesting 772 nodes from 0 after 59 seconds, got 772 nodes 
+ 10027 nodes left, 13.0 min left
+requesting 773 nodes from 0 after 58 seconds, got 773 nodes 
+ 9254 nodes left, 11.9 min left
+requesting 775 nodes from 0 after 57 seconds, got 775 nodes 
+ 8479 nodes left, 10.9 min left
+requesting 775 nodes from 0 after 59 seconds, got 775 nodes 
+ 7704 nodes left, 9.9 min left
+requesting 776 nodes from 0 after 58 seconds, got 776 nodes 
+ 6928 nodes left, 9.0 min left
+requesting 771 nodes from 0 after 63 seconds, got 771 nodes 
+ 6157 nodes left, 8.0 min left
+requesting 773 nodes from 0 after 57 seconds, got 773 nodes 
+ 5384 nodes left, 7.0 min left
+requesting 774 nodes from 0 after 58 seconds, got 774 nodes 
+ 4610 nodes left, 6.0 min left
+requesting 774 nodes from 0 after 59 seconds, got 774 nodes 
+ 3836 nodes left, 4.9 min left
+requesting 778 nodes from 0 after 56 seconds, got 778 nodes 
+ 3058 nodes left, 3.9 min left
+requesting 777 nodes from 0 after 59 seconds, got 777 nodes 
+ 2281 nodes left, 2.9 min left
+requesting 778 nodes from 0 after 58 seconds, got 778 nodes 
+ 1503 nodes left, 1.9 min left
+requesting 777 nodes from 0 after 59 seconds, got 752 nodes 
+ 751 nodes left, 1.0 min left
+requesting 775 nodes from 0 after 58 seconds, got 376 nodes 
+ 375 nodes left, 0.5 min left
+requesting 772 nodes from 0 after 29 seconds, got 188 nodes 
+ 187 nodes left, 0.2 min left
+requesting 775 nodes from 0 after 13 seconds, got 94 nodes 
+ 93 nodes left, 0.1 min left
+requesting 768 nodes from 0 after 7 seconds, got 77 nodes 
+ 16 nodes left, 0.0 min left
+requesting 757 nodes from 0 after 6 seconds, got 16 nodes 
+distributor exit
+requesting 729 nodes from 0 after 1 seconds, got 0 nodes 
+fetcher exit
+Search took 71.133117 min 
+Start applying moves
+Applying 1 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+ 25 nodes left 22 nodes left 20 nodes left 14 nodes left 2 nodes left 1 nodes leftRecycled 9 moves
+6 nodes cleaned
+0 nodes cleaned
+First stage 16 deferred node 
+recycled 0.360000 of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 13 nodes
+parsimony score after optimizing: 74850,with radius 32, second from start 13901 
+
+start
+Total 120014,max 108 
+Updating sensitive alleles take 5 sec13 nodes to search 
+Node size: 55691
+Will stop in 153722632 min
++++++++++Move receiver exit
+ 13 nodes left, 0.1 min left
+requesting 100 nodes from 0 after 0 seconds, got 11 nodes 
+ 2 nodes left, 0.0 min left
+requesting 156 nodes from 0 after 0 seconds, got 2 nodes 
+distributor exit
+requesting 152 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.017183 min 
+Start applying moves
+Applying 1 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 1 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 1 nodes
+parsimony score after optimizing: 74849,with radius 32, second from start 13908 
+
+start
+Total 120014,max 108 
+Updating sensitive alleles take 5 sec1 nodes to search 
+Node size: 55692
+Will stop in 153722631 min
++++++++++Move receiver exit
+ 1 nodes left, 0.0 min left
+requesting 100 nodes from 0 after 0 seconds, got 1 nodes 
+distributor exit
+requesting 96 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.001100 min 
+Start applying moves
+Applying 0 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 0 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 0 nodes
+parsimony score after optimizing: 74849,with radius 32, second from start 13914 
+
+Last round improvement 0.000174
+Start Finding nodes to move 
+find max_level
+Max level 26
+Search all nodes
+Will search 1.000000 of nodes
+Took 0.002773 s to find nodes to move
+55692 nodes to search
+start
+Total 120014,max 108 
+Updating sensitive alleles take 5 sec55692 nodes to search 
+Node size: 55692
+Will stop in 153722631 min
++++++++++Move receiver exit
+ 55692 nodes left, 556.9 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 55592 nodes left, 336.9 min left
+requesting 165 nodes from 0 after 7 seconds, got 165 nodes 
+ 55427 nodes left, 253.1 min left
+requesting 219 nodes from 0 after 13 seconds, got 219 nodes 
+ 55208 nodes left, 201.5 min left
+requesting 274 nodes from 0 after 16 seconds, got 274 nodes 
+ 54934 nodes left, 171.1 min left
+requesting 321 nodes from 0 after 21 seconds, got 321 nodes 
+ 54613 nodes left, 149.6 min left
+requesting 365 nodes from 0 after 24 seconds, got 365 nodes 
+ 54248 nodes left, 134.3 min left
+requesting 404 nodes from 0 after 28 seconds, got 404 nodes 
+ 53844 nodes left, 122.7 min left
+requesting 439 nodes from 0 after 31 seconds, got 439 nodes 
+ 53405 nodes left, 113.6 min left
+requesting 470 nodes from 0 after 34 seconds, got 470 nodes 
+ 52935 nodes left, 105.2 min left
+requesting 503 nodes from 0 after 34 seconds, got 503 nodes 
+ 52432 nodes left, 98.6 min left
+requesting 532 nodes from 0 after 37 seconds, got 532 nodes 
+ 51900 nodes left, 93.3 min left
+requesting 556 nodes from 0 after 40 seconds, got 556 nodes 
+ 51344 nodes left, 89.0 min left
+requesting 577 nodes from 0 after 42 seconds, got 577 nodes 
+ 50767 nodes left, 85.2 min left
+requesting 596 nodes from 0 after 44 seconds, got 596 nodes 
+ 50171 nodes left, 81.7 min left
+requesting 614 nodes from 0 after 45 seconds, got 614 nodes 
+ 49557 nodes left, 78.8 min left
+requesting 629 nodes from 0 after 47 seconds, got 629 nodes 
+ 48928 nodes left, 76.1 min left
+requesting 643 nodes from 0 after 48 seconds, got 643 nodes 
+ 48285 nodes left, 73.7 min left
+requesting 655 nodes from 0 after 49 seconds, got 655 nodes 
+ 47630 nodes left, 71.5 min left
+requesting 666 nodes from 0 after 50 seconds, got 666 nodes 
+ 46964 nodes left, 69.4 min left
+requesting 677 nodes from 0 after 50 seconds, got 677 nodes 
+ 46287 nodes left, 67.6 min left
+requesting 685 nodes from 0 after 52 seconds, got 685 nodes 
+ 45602 nodes left, 65.7 min left
+requesting 694 nodes from 0 after 52 seconds, got 694 nodes 
+ 44908 nodes left, 63.9 min left
+requesting 703 nodes from 0 after 52 seconds, got 703 nodes 
+ 44205 nodes left, 62.3 min left
+requesting 709 nodes from 0 after 54 seconds, got 709 nodes 
+ 43496 nodes left, 60.8 min left
+requesting 715 nodes from 0 after 54 seconds, got 715 nodes 
+ 42781 nodes left, 59.3 min left
+requesting 721 nodes from 0 after 54 seconds, got 721 nodes 
+ 42060 nodes left, 57.9 min left
+requesting 726 nodes from 0 after 55 seconds, got 726 nodes 
+ 41334 nodes left, 56.5 min left
+requesting 732 nodes from 0 after 54 seconds, got 732 nodes 
+ 40602 nodes left, 55.2 min left
+requesting 735 nodes from 0 after 56 seconds, got 735 nodes 
+ 39867 nodes left, 53.9 min left
+requesting 740 nodes from 0 after 55 seconds, got 740 nodes 
+ 39127 nodes left, 52.7 min left
+requesting 742 nodes from 0 after 57 seconds, got 742 nodes 
+ 38385 nodes left, 51.5 min left
+requesting 745 nodes from 0 after 56 seconds, got 745 nodes 
+ 37640 nodes left, 50.3 min left
+requesting 748 nodes from 0 after 56 seconds, got 748 nodes 
+ 36892 nodes left, 49.2 min left
+requesting 750 nodes from 0 after 57 seconds, got 750 nodes 
+ 36142 nodes left, 48.1 min left
+requesting 752 nodes from 0 after 57 seconds, got 752 nodes 
+ 35390 nodes left, 47.0 min left
+requesting 753 nodes from 0 after 58 seconds, got 753 nodes 
+ 34637 nodes left, 45.8 min left
+requesting 756 nodes from 0 after 56 seconds, got 756 nodes 
+ 33881 nodes left, 44.8 min left
+requesting 757 nodes from 0 after 58 seconds, got 757 nodes 
+ 33124 nodes left, 43.7 min left
+requesting 758 nodes from 0 after 58 seconds, got 758 nodes 
+ 32366 nodes left, 42.6 min left
+requesting 759 nodes from 0 after 58 seconds, got 759 nodes 
+ 31607 nodes left, 41.6 min left
+requesting 760 nodes from 0 after 58 seconds, got 760 nodes 
+ 30847 nodes left, 40.6 min left
+requesting 760 nodes from 0 after 59 seconds, got 760 nodes 
+ 30087 nodes left, 39.5 min left
+requesting 761 nodes from 0 after 58 seconds, got 761 nodes 
+ 29326 nodes left, 38.3 min left
+requesting 765 nodes from 0 after 56 seconds, got 765 nodes 
+ 28561 nodes left, 37.3 min left
+requesting 766 nodes from 0 after 58 seconds, got 766 nodes 
+ 27795 nodes left, 36.3 min left
+requesting 765 nodes from 0 after 59 seconds, got 765 nodes 
+ 27030 nodes left, 35.3 min left
+requesting 765 nodes from 0 after 59 seconds, got 765 nodes 
+ 26265 nodes left, 34.3 min left
+requesting 766 nodes from 0 after 58 seconds, got 766 nodes 
+ 25499 nodes left, 33.2 min left
+requesting 768 nodes from 0 after 57 seconds, got 768 nodes 
+ 24731 nodes left, 32.1 min left
+requesting 770 nodes from 0 after 57 seconds, got 770 nodes 
+ 23961 nodes left, 31.0 min left
+requesting 772 nodes from 0 after 57 seconds, got 772 nodes 
+ 23189 nodes left, 29.9 min left
+requesting 776 nodes from 0 after 56 seconds, got 776 nodes 
+ 22413 nodes left, 28.9 min left
+requesting 775 nodes from 0 after 59 seconds, got 775 nodes 
+ 21638 nodes left, 28.1 min left
+requesting 771 nodes from 0 after 62 seconds, got 771 nodes 
+ 20867 nodes left, 27.0 min left
+requesting 772 nodes from 0 after 58 seconds, got 772 nodes 
+ 20095 nodes left, 26.0 min left
+requesting 773 nodes from 0 after 58 seconds, got 773 nodes 
+ 19322 nodes left, 25.1 min left
+requesting 771 nodes from 0 after 60 seconds, got 771 nodes 
+ 18551 nodes left, 24.0 min left
+requesting 772 nodes from 0 after 58 seconds, got 772 nodes 
+ 17779 nodes left, 22.9 min left
+requesting 776 nodes from 0 after 56 seconds, got 776 nodes 
+ 17003 nodes left, 21.9 min left
+requesting 775 nodes from 0 after 59 seconds, got 775 nodes 
+ 16228 nodes left, 20.9 min left
+requesting 777 nodes from 0 after 57 seconds, got 777 nodes 
+ 15451 nodes left, 19.9 min left
+requesting 775 nodes from 0 after 60 seconds, got 775 nodes 
+ 14676 nodes left, 18.9 min left
+requesting 777 nodes from 0 after 57 seconds, got 777 nodes 
+ 13899 nodes left, 17.9 min left
+requesting 777 nodes from 0 after 59 seconds, got 777 nodes 
+ 13122 nodes left, 17.0 min left
+requesting 773 nodes from 0 after 62 seconds, got 773 nodes 
+ 12349 nodes left, 16.0 min left
+requesting 772 nodes from 0 after 59 seconds, got 772 nodes 
+ 11577 nodes left, 15.0 min left
+requesting 773 nodes from 0 after 58 seconds, got 773 nodes 
+ 10804 nodes left, 14.0 min left
+requesting 772 nodes from 0 after 59 seconds, got 772 nodes 
+ 10032 nodes left, 13.0 min left
+requesting 772 nodes from 0 after 59 seconds, got 772 nodes 
+ 9260 nodes left, 12.0 min left
+requesting 770 nodes from 0 after 60 seconds, got 770 nodes 
+ 8490 nodes left, 11.1 min left
+requesting 768 nodes from 0 after 60 seconds, got 768 nodes 
+ 7722 nodes left, 10.0 min left
+requesting 770 nodes from 0 after 57 seconds, got 770 nodes 
+ 6952 nodes left, 9.0 min left
+requesting 771 nodes from 0 after 58 seconds, got 771 nodes 
+ 6181 nodes left, 8.0 min left
+requesting 772 nodes from 0 after 58 seconds, got 772 nodes 
+ 5409 nodes left, 7.0 min left
+requesting 773 nodes from 0 after 58 seconds, got 773 nodes 
+ 4636 nodes left, 6.0 min left
+requesting 772 nodes from 0 after 59 seconds, got 772 nodes 
+ 3864 nodes left, 5.0 min left
+requesting 773 nodes from 0 after 58 seconds, got 773 nodes 
+ 3091 nodes left, 4.0 min left
+requesting 774 nodes from 0 after 58 seconds, got 774 nodes 
+ 2317 nodes left, 3.0 min left
+requesting 774 nodes from 0 after 59 seconds, got 774 nodes 
+ 1543 nodes left, 2.0 min left
+requesting 774 nodes from 0 after 59 seconds, got 772 nodes 
+ 771 nodes left, 1.0 min left
+requesting 776 nodes from 0 after 57 seconds, got 386 nodes 
+ 385 nodes left, 0.5 min left
+requesting 775 nodes from 0 after 29 seconds, got 193 nodes 
+ 192 nodes left, 0.2 min left
+requesting 769 nodes from 0 after 15 seconds, got 97 nodes 
+ 95 nodes left, 0.1 min left
+requesting 764 nodes from 0 after 7 seconds, got 77 nodes 
+ 18 nodes left, 0.0 min left
+requesting 764 nodes from 0 after 5 seconds, got 18 nodes 
+distributor exit
+requesting 741 nodes from 0 after 1 seconds, got 0 nodes 
+fetcher exit
+Search took 71.032633 min 
+Start applying moves
+Applying 1 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+1 nodes cleaned
+0 nodes cleaned
+First stage 1 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 1 nodes
+parsimony score after optimizing: 74848,with radius 64, second from start 18182 
+
+start
+Total 120014,max 108 
+Updating sensitive alleles take 5 sec1 nodes to search 
+Node size: 55692
+Will stop in 153722560 min
++++++++++Move receiver exit
+ 1 nodes left, 0.0 min left
+requesting 100 nodes from 0 after 0 seconds, got 1 nodes 
+distributor exit
+requesting 96 nodes from 0 after 0 seconds, got 0 nodes 
+fetcher exit
+Search took 0.001100 min 
+Start applying moves
+Applying 0 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 0 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 0 nodes
+parsimony score after optimizing: 74848,with radius 64, second from start 18188 
+
+Last round improvement 0.000013
+Start Finding nodes to move 
+find max_level
+Max level 26
+Search all nodes
+Will search 1.000000 of nodes
+Took 0.003642 s to find nodes to move
+55692 nodes to search
+start
+Total 120014,max 108 
+Updating sensitive alleles take 5 sec55692 nodes to search 
+Node size: 55692
+Will stop in 153722560 min
++++++++++Move receiver exit
+ 55692 nodes left, 556.9 min left
+requesting 100 nodes from 0 after 0 seconds, got 100 nodes 
+ 55592 nodes left, 336.9 min left
+requesting 165 nodes from 0 after 7 seconds, got 165 nodes 
+ 55427 nodes left, 253.1 min left
+requesting 219 nodes from 0 after 13 seconds, got 219 nodes 
+ 55208 nodes left, 201.5 min left
+requesting 274 nodes from 0 after 16 seconds, got 274 nodes 
+ 54934 nodes left, 171.1 min left
+requesting 321 nodes from 0 after 21 seconds, got 321 nodes 
+ 54613 nodes left, 149.6 min left
+requesting 365 nodes from 0 after 24 seconds, got 365 nodes 
+ 54248 nodes left, 133.6 min left
+requesting 406 nodes from 0 after 27 seconds, got 406 nodes 
+ 53842 nodes left, 121.5 min left
+requesting 443 nodes from 0 after 30 seconds, got 443 nodes 
+ 53399 nodes left, 112.7 min left
+requesting 474 nodes from 0 after 34 seconds, got 474 nodes 
+ 52925 nodes left, 104.8 min left
+requesting 505 nodes from 0 after 35 seconds, got 505 nodes 
+ 52420 nodes left, 98.5 min left
+requesting 532 nodes from 0 after 38 seconds, got 532 nodes 
+ 51888 nodes left, 93.7 min left
+requesting 554 nodes from 0 after 41 seconds, got 554 nodes 
+ 51334 nodes left, 89.3 min left
+requesting 575 nodes from 0 after 42 seconds, got 575 nodes 
+ 50759 nodes left, 85.5 min left
+requesting 594 nodes from 0 after 44 seconds, got 594 nodes 
+ 50165 nodes left, 82.0 min left
+requesting 612 nodes from 0 after 45 seconds, got 612 nodes 
+ 49553 nodes left, 79.0 min left
+requesting 627 nodes from 0 after 47 seconds, got 627 nodes 
+ 48926 nodes left, 76.3 min left
+requesting 641 nodes from 0 after 48 seconds, got 641 nodes 
+ 48285 nodes left, 73.9 min left
+requesting 653 nodes from 0 after 49 seconds, got 653 nodes 
+ 47632 nodes left, 71.7 min left
+requesting 664 nodes from 0 after 50 seconds, got 664 nodes 
+ 46968 nodes left, 69.6 min left
+requesting 675 nodes from 0 after 50 seconds, got 675 nodes 
+ 46293 nodes left, 67.8 min left
+requesting 683 nodes from 0 after 52 seconds, got 683 nodes 
+ 45610 nodes left, 65.8 min left
+requesting 693 nodes from 0 after 51 seconds, got 693 nodes 
+ 44917 nodes left, 64.0 min left
+requesting 702 nodes from 0 after 52 seconds, got 702 nodes 
+ 44215 nodes left, 62.5 min left
+requesting 708 nodes from 0 after 54 seconds, got 708 nodes 
+ 43507 nodes left, 60.9 min left
+requesting 714 nodes from 0 after 54 seconds, got 714 nodes 
+ 42793 nodes left, 59.4 min left
+requesting 720 nodes from 0 after 54 seconds, got 720 nodes 
+ 42073 nodes left, 58.2 min left
+requesting 723 nodes from 0 after 56 seconds, got 723 nodes 
+ 41350 nodes left, 56.7 min left
+requesting 729 nodes from 0 after 54 seconds, got 729 nodes 
+ 40621 nodes left, 55.5 min left
+requesting 732 nodes from 0 after 56 seconds, got 732 nodes 
+ 39889 nodes left, 54.1 min left
+requesting 737 nodes from 0 after 55 seconds, got 737 nodes 
+ 39152 nodes left, 53.1 min left
+requesting 738 nodes from 0 after 58 seconds, got 738 nodes 
+ 38414 nodes left, 51.8 min left
+requesting 741 nodes from 0 after 56 seconds, got 741 nodes 
+ 37673 nodes left, 50.5 min left
+requesting 746 nodes from 0 after 55 seconds, got 746 nodes 
+ 36927 nodes left, 49.4 min left
+requesting 748 nodes from 0 after 57 seconds, got 748 nodes 
+ 36179 nodes left, 48.2 min left
+requesting 751 nodes from 0 after 56 seconds, got 751 nodes 
+ 35428 nodes left, 47.0 min left
+requesting 753 nodes from 0 after 57 seconds, got 753 nodes 
+ 34675 nodes left, 45.9 min left
+requesting 756 nodes from 0 after 56 seconds, got 756 nodes 
+ 33919 nodes left, 44.8 min left
+requesting 757 nodes from 0 after 58 seconds, got 757 nodes 
+ 33162 nodes left, 43.7 min left
+requesting 759 nodes from 0 after 57 seconds, got 759 nodes 
+ 32403 nodes left, 42.6 min left
+requesting 760 nodes from 0 after 58 seconds, got 760 nodes 
+ 31643 nodes left, 41.6 min left
+requesting 761 nodes from 0 after 58 seconds, got 761 nodes 
+ 30882 nodes left, 40.6 min left
+requesting 760 nodes from 0 after 59 seconds, got 760 nodes 
+ 30122 nodes left, 39.6 min left
+requesting 761 nodes from 0 after 58 seconds, got 761 nodes 
+ 29361 nodes left, 38.4 min left
+requesting 765 nodes from 0 after 56 seconds, got 765 nodes 
+ 28596 nodes left, 37.3 min left
+requesting 766 nodes from 0 after 58 seconds, got 766 nodes 
+ 27830 nodes left, 36.4 min left
+requesting 765 nodes from 0 after 59 seconds, got 765 nodes 
+ 27065 nodes left, 35.3 min left
+requesting 766 nodes from 0 after 58 seconds, got 766 nodes 
+ 26299 nodes left, 34.3 min left
+requesting 767 nodes from 0 after 58 seconds, got 767 nodes 
+ 25532 nodes left, 33.2 min left
+requesting 768 nodes from 0 after 58 seconds, got 768 nodes 
+ 24764 nodes left, 32.2 min left
+requesting 769 nodes from 0 after 58 seconds, got 769 nodes 
+ 23995 nodes left, 31.0 min left
+requesting 773 nodes from 0 after 56 seconds, got 773 nodes 
+ 23222 nodes left, 30.0 min left
+requesting 775 nodes from 0 after 57 seconds, got 775 nodes 
+ 22447 nodes left, 29.0 min left
+requesting 775 nodes from 0 after 59 seconds, got 775 nodes 
+ 21672 nodes left, 28.0 min left
+requesting 773 nodes from 0 after 60 seconds, got 773 nodes 
+ 20899 nodes left, 27.1 min left
+requesting 771 nodes from 0 after 60 seconds, got 771 nodes 
+ 20128 nodes left, 26.1 min left
+requesting 770 nodes from 0 after 59 seconds, got 770 nodes 
+ 19358 nodes left, 25.2 min left
+requesting 768 nodes from 0 after 60 seconds, got 768 nodes 
+ 18590 nodes left, 24.2 min left
+requesting 769 nodes from 0 after 58 seconds, got 769 nodes 
+ 17821 nodes left, 23.1 min left
+requesting 771 nodes from 0 after 57 seconds, got 771 nodes 
+ 17050 nodes left, 22.2 min left
+requesting 769 nodes from 0 after 60 seconds, got 769 nodes 
+ 16281 nodes left, 21.1 min left
+requesting 770 nodes from 0 after 58 seconds, got 770 nodes 
+ 15511 nodes left, 20.1 min left
+requesting 770 nodes from 0 after 59 seconds, got 770 nodes 
+ 14741 nodes left, 19.1 min left
+requesting 771 nodes from 0 after 58 seconds, got 771 nodes 
+ 13970 nodes left, 18.2 min left
+requesting 769 nodes from 0 after 60 seconds, got 769 nodes 
+ 13201 nodes left, 17.2 min left
+requesting 767 nodes from 0 after 60 seconds, got 767 nodes 
+ 12434 nodes left, 16.3 min left
+requesting 765 nodes from 0 after 60 seconds, got 765 nodes 
+ 11669 nodes left, 15.3 min left
+requesting 765 nodes from 0 after 59 seconds, got 765 nodes 
+ 10904 nodes left, 14.3 min left
+requesting 765 nodes from 0 after 59 seconds, got 765 nodes 
+ 10139 nodes left, 13.2 min left
+requesting 766 nodes from 0 after 58 seconds, got 766 nodes 
+ 9373 nodes left, 12.3 min left
+requesting 765 nodes from 0 after 59 seconds, got 765 nodes 
+ 8608 nodes left, 11.3 min left
+requesting 765 nodes from 0 after 59 seconds, got 765 nodes 
+ 7843 nodes left, 10.2 min left
+requesting 767 nodes from 0 after 57 seconds, got 767 nodes 
+ 7076 nodes left, 9.2 min left
+requesting 768 nodes from 0 after 58 seconds, got 768 nodes 
+ 6308 nodes left, 8.2 min left
+requesting 769 nodes from 0 after 58 seconds, got 769 nodes 
+ 5539 nodes left, 7.2 min left
+requesting 770 nodes from 0 after 58 seconds, got 770 nodes 
+ 4769 nodes left, 6.2 min left
+requesting 770 nodes from 0 after 59 seconds, got 770 nodes 
+ 3999 nodes left, 5.2 min left
+requesting 771 nodes from 0 after 58 seconds, got 771 nodes 
+ 3228 nodes left, 4.2 min left
+requesting 773 nodes from 0 after 57 seconds, got 773 nodes 
+ 2455 nodes left, 3.2 min left
+requesting 774 nodes from 0 after 58 seconds, got 774 nodes 
+ 1681 nodes left, 2.2 min left
+requesting 771 nodes from 0 after 61 seconds, got 771 nodes 
+ 910 nodes left, 1.2 min left
+requesting 773 nodes from 0 after 57 seconds, got 456 nodes 
+ 454 nodes left, 0.6 min left
+requesting 773 nodes from 0 after 34 seconds, got 228 nodes 
+ 226 nodes left, 0.3 min left
+requesting 771 nodes from 0 after 17 seconds, got 114 nodes 
+ 112 nodes left, 0.1 min left
+requesting 762 nodes from 0 after 9 seconds, got 77 nodes 
+ 35 nodes left, 0.0 min left
+requesting 762 nodes from 0 after 5 seconds, got 35 nodes 
+distributor exit
+requesting 755 nodes from 0 after 2 seconds, got 0 nodes 
+fetcher exit
+Search took 71.217400 min 
+Start applying moves
+Applying 0 moves
+apply moves took 0 seconds
+Start recycling conflicting moves
+Recycled 0 moves
+0 nodes cleaned
+First stage 0 deferred node 
+recycled -nan of conflicting moves 
+recycling moves took 0 seconds
+populated ignored range
+Defered 0 nodes
+parsimony score after optimizing: 74848,with radius 128, second from start 22467 
+
+Last round improvement 0.000000
+Less than minimium improvement
+Final Parsimony score 74848
+10725 condensed_nodes
+Maximum memory usage from 0: 1689844 kb 
+44337.25user 310.71system 6:14:28elapsed 198%CPU (0avgtext+0avgdata 1689844maxresident)k
+25792inputs+11336outputs (159major+667858minor)pagefaults 0swaps
