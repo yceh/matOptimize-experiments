@@ -4,10 +4,13 @@
 
 # Run TNT
 ```
-bash benchmark_tnt.sh <folder>
+bash benchmark_tnt.sh <folder> <number of processes for parallel sectorial search> <number of processes for parallel TBR move>
 ```
 It expects tnt to be in $PATH. TNT can be obtained from http://www.lillo.org.ar/phylogeny/tnt. Only latest versions from the website and we couldn't distribute the version we used due to licensing restriction.
-It also expect init.fa.gz (FASTA input for TNT), init.nwk (newick input for TNT) and init.vcf.gz (VCF input for matOptimize to compute parsimony score again).
+
+
+It also expect init.fa.gz (FASTA input for TNT), init.nwk (newick input for TNT) and init.vcf.gz (VCF input for matOptimize to compute parsimony score again). 
+The log (tnt_parallel_sect_log) and newick file (tnt_parallel_sect.nwk) in the same folder.
 
 # Run matOptimize
 ```
