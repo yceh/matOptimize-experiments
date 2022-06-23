@@ -12,7 +12,7 @@ It will output the log (tnt_parallel_sect_log) and the newick file (tnt_parallel
 
 # Run matOptimize
 ```
-mpirun -np <number of processes> --hostfile <hostfile> matOptimize -i <input protobuf> -o <output protobuf> -n -m 0.000001
+mpirun -np <number of processes> --hostfile <hostfile> matOptimize -i <input protobuf> -v <input vcf file> -o <output protobuf> -n -m 0.000001
 ```
 -n is for not dumping protobuf
 
