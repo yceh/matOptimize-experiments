@@ -7,6 +7,7 @@
 bash benchmark_tnt.sh <folder>
 ```
 It expects tnt to be in $PATH. TNT can be obtained from http://www.lillo.org.ar/phylogeny/tnt. Only latest versions from the website and we couldn't distribute the version we used due to licensing restriction.
+It also expect init.fa.gz (FASTA input for TNT), init.nwk (newick input for TNT) and init.vcf.gz (VCF input for matOptimize to compute parsimony score again).
 
 # Run matOptimize
 ```
