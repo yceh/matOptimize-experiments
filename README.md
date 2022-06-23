@@ -15,5 +15,7 @@ The log (tnt_parallel_sect_log) and the newick file (tnt_parallel_sect.nwk) will
 mpirun -np <number of processes> --hostfile <hostfile> matOptimize -i <input protobuf> -o <output protobuf> -n -m 0.000001
 ```
 -n is for not dumping protobuf
+
 -m 0.000001 is to keep matOptimize running until no improvement can be done.
+
 hostfile expect one hostname per line, and the same number of lines as <number of processes>.
