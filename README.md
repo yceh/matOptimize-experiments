@@ -18,4 +18,4 @@ mpirun -np <number of processes> --hostfile <hostfile> matOptimize -i <input pro
 
 -m 0.000001 is to keep matOptimize running until no improvement can be done.
 
-hostfile expect one hostname per line, and the same number of lines as <number of processes>.
+hostfile expect one hostname per line, and the same number of lines as the number of processes specified.
